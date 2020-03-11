@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "quickcarpet",
+  "version": "${version}",
+  "name": "QuickCarpet",
+  "description": "Powerful toolbox with ultimate control for technical mc!",
+  "authors": [
+    "DeadlyMC",
+    "skyrising"
+  ],
+  "contact": {
+    "homepage": "https://discord.gg/scicraft",
+    "sources": "https://github.com/DeadlyMC/QuickCarpet114",
+    "issues": "https://github.com/DeadlyMC/QuickCarpet114/issues"
+  },
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "quickcarpet.QuickCarpet::getInstance"
+    ]
+  },
+  "mixins": [
+    "quickcarpet.mixins.json"
+  ],
+  "requires": {
+    "minecraft": "~1.15-rc.4"
+  },
+  "recommends": {
+    "malilib": "${malilib_version}",
+    "fabric-resource-loader-v0": "*"
+  }
+}
